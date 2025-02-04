@@ -4,6 +4,12 @@ def factorial(n):
         res = res * i
     return res
 
+def is_pow_5(n):
+    while (n > 1 and n%5 == 0):
+	    n//=5
+    return n==1
+  
+
 def is_prime(num):
     """Перевіряє, чи є число простим."""
     if num < 2:
